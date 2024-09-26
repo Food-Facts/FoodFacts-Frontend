@@ -3,6 +3,9 @@
   --primary-color: #3f51b5; /* Indigo */
   --accent-color: #e91e63;  /* Pink */
   --warn-color: #f44336;    /* Red */
+  --card-background-color: #e8f5e9; /* Light Green */
+  --text-color: #2e7d32; /* Green */
+  --background-color: #ffffff; /* White */
 }
 
 /* Apply the custom theme to Angular Material components */
@@ -35,4 +38,16 @@
 .mat-raised-button.mat-warn {
   background-color: var(--warn-color) !important;
   color: white !important;
+}
+
+/* Set the background color for mat-card */
+.mat-card {
+  background-color: var(--card-background-color) !important;
+  color: var(--text-color) !important;
+}
+
+/* Set the background color for the entire application */
+body {
+  background-color: var(--background-color) !important;
+  color: var(--text-color) !important;
 }
