@@ -1,0 +1,25 @@
+<mat-toolbar class="rounded-3xl p-4 pl-6 bg-green-200" color="primary">
+  <div class="flex items-center gap-2" *ngIf="startTemplate">
+    <ng-container *ngTemplateOutlet="startTemplate"></ng-container>
+  </div>
+  <span class="flex-1"></span>
+  <div class="flex items-center gap-2" *ngIf="endTemplate">
+    <ng-container *ngTemplateOutlet="endTemplate"></ng-container>
+  </div>
+</mat-toolbar>
+
+<ng-template #start>
+  <div class="flex items-center gap-2">
+    <span class="text-xl font-bold">Food Facts</span>
+  </div>
+</ng-template>
+
+<ng-template #end>
+  <div class="flex items-center gap-2">
+    <mat-icon>search</mat-icon>
+    <mat-icon>notifications</mat-icon>
+    <mat-icon>help</mat-icon>
+    <button mat-raised-button color="primary" class="bg-contrast-500 text-white">Share</button>
+    <mat-icon>account_circle</mat-icon>
+  </div>
+</ng-template>
