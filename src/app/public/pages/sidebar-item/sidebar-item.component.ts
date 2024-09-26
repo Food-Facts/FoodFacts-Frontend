@@ -1,7 +1,8 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { NgClass, NgIf } from '@angular/common';
 import { SidebarComponent } from '../sidebar/sidebar.component';
-import {MatIcon} from "@angular/material/icon";
+import { MatIcon } from '@angular/material/icon';
 
 @Component({
   selector: 'app-sidebar-item',
@@ -20,11 +21,15 @@ export class SidebarItemComponent {
   @Input() active: boolean = false;
   @Input() alert: boolean = false;
   @Input() expanded: boolean;
+  @Input() route: string = '';
 
-
-  constructor(private sidebar: SidebarComponent) {
+  constructor(private sidebar: SidebarComponent, private router: Router) {
     this.expanded = sidebar.expanded;
   }
 
+  navigate() {
+    if (this.route) {
+      this.router.navigate([this.route]);
+    }
+  }
 }
-
