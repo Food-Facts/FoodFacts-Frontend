@@ -1,0 +1,163 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "product": "Coca-Cola",
+      "brand": "Coca-Cola Company",
+      "image": "https://example.com/images/coca-cola.jpg",
+      "category": "Beverages",
+      "ingredients": [
+        "Agua carbonatada",
+        "Azúcar",
+        "Colorante caramelo",
+        "Ácido fosfórico",
+        "Cafeína",
+        "Saborizante natural"
+      ],
+      "price": 1.5
+    },
+    {
+      "id": "2",
+      "product": "Pepsi",
+      "brand": "PepsiCo",
+      "image": "https://example.com/images/pepsi.jpg",
+      "category": "Beverages",
+      "ingredients": [
+        "Agua carbonatada",
+        "Azúcar",
+        "Colorante caramelo",
+        "Ácido fosfórico",
+        "Cafeína",
+        "Saborizante natural"
+      ],
+      "price": 1.4
+    },
+    {
+      "id": "3",
+      "product": "Sprite",
+      "brand": "Coca-Cola Company",
+      "image": "https://example.com/images/sprite.jpg",
+      "category": "Beverages",
+      "ingredients": [
+        "Agua carbonatada",
+        "Azúcar",
+        "Ácido cítrico",
+        "Saborizante natural",
+        "Benzoato de sodio"
+      ],
+      "price": 1.3
+    },
+    {
+      "id": "4",
+      "product": "Fanta",
+      "brand": "Coca-Cola Company",
+      "image": "https://example.com/images/fanta.jpg",
+      "category": "Beverages",
+      "ingredients": [
+        "Agua carbonatada",
+        "Azúcar",
+        "Ácido cítrico",
+        "Saborizante natural",
+        "Colorante"
+      ],
+      "price": 1.35
+    },
+    {
+      "id": "5",
+      "product": "Mountain Dew",
+      "brand": "PepsiCo",
+      "image": "https://example.com/images/mountain-dew.jpg",
+      "category": "Beverages",
+      "ingredients": [
+        "Agua carbonatada",
+        "Jarabe de maíz",
+        "Ácido cítrico",
+        "Saborizante natural",
+        "Cafeína",
+        "Colorante"
+      ],
+      "price": 1.45
+    },
+    {
+      "id": "6",
+      "product": "Dr Pepper",
+      "brand": "Dr Pepper Snapple Group",
+      "image": "https://example.com/images/dr-pepper.jpg",
+      "category": "Beverages",
+      "ingredients": [
+        "Agua carbonatada",
+        "Jarabe de maíz",
+        "Colorante caramelo",
+        "Ácido fosfórico",
+        "Saborizante natural",
+        "Cafeína"
+      ],
+      "price": 1.5
+    },
+    {
+      "id": "7",
+      "product": "7 Up",
+      "brand": "PepsiCo",
+      "image": "https://example.com/images/7up.jpg",
+      "category": "Beverages",
+      "ingredients": [
+        "Agua carbonatada",
+        "Azúcar",
+        "Ácido cítrico",
+        "Saborizante natural",
+        "Benzoato de sodio"
+      ],
+      "price": 1.25
+    },
+    {
+      "id": "8",
+      "product": "Red Bull",
+      "brand": "Red Bull GmbH",
+      "image": "https://example.com/images/red-bull.jpg",
+      "category": "Energy Drinks",
+      "ingredients": [
+        "Agua carbonatada",
+        "Azúcar",
+        "Ácido cítrico",
+        "Cafeína",
+        "Taurina",
+        "Saborizante natural"
+      ],
+      "price": 2
+    },
+    {
+      "id": "9",
+      "product": "Monster Energy",
+      "brand": "Monster Beverage",
+      "image": "https://example.com/images/monster-energy.jpg",
+      "category": "Energy Drinks",
+      "ingredients": [
+        "Agua carbonatada",
+        "Jarabe de maíz",
+        "Ácido cítrico",
+        "Cafeína",
+        "Taurina",
+        "Saborizante natural"
+      ],
+      "price": 2.1
+    },
+    {
+      "id": "10",
+      "product": "Gatorade",
+      "brand": "PepsiCo",
+      "image": "https://example.com/images/gatorade.jpg",
+      "category": "Sports Drinks",
+      "ingredients": [
+        "Agua",
+        "Azúcar",
+        "Ácido cítrico",
+        "Saborizante natural",
+        "Sales minerales"
+      ],
+      "price": 1.8
+    },
+    {
+      "id": "f3ba"
+    }
+  ]
+}
