@@ -51,3 +51,10 @@ body {
   background-color: var(--background-color) !important;
   color: var(--text-color) !important;
 }
+
+.mat-card-content {
+  background-color: greenyellow;
+  color: var(--text-color) !important;
+}
+
+

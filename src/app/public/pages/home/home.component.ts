@@ -1,30 +1,34 @@
 import { Component } from '@angular/core';
 import { MatCard, MatCardContent, MatCardHeader, MatCardTitle, MatCardSubtitle } from '@angular/material/card';
 import { MatIcon } from '@angular/material/icon';
-import { MatFormField } from '@angular/material/form-field';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
-import { MatInput } from '@angular/material/input';
-import { MatButton } from '@angular/material/button';
-import { NgForOf } from '@angular/common';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { NgClass, NgForOf, CommonModule } from '@angular/common';
+import { MatGridTile } from '@angular/material/grid-list';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
+    CommonModule,
     MatCard,
     MatCardHeader,
     MatCardTitle,
     MatCardSubtitle,
     MatIcon,
     MatCardContent,
-    MatFormField,
+    MatFormFieldModule,
     FormsModule,
-    MatInput,
-    MatButton,
-    NgForOf
+    MatInputModule,
+    MatButtonModule,
+    NgForOf,
+    NgClass,
+    MatGridTile
   ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
   searchTerm: string = '';
