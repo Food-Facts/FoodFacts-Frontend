@@ -1,0 +1,105 @@
+<div class="min-h-screen bg-gradient-to-b from-green-50 to-white p-8">
+  <div
+    @fadeIn
+    class="max-w-6xl mx-auto"
+  >
+    <h1 class="text-4xl font-bold text-green-800 mb-4">Welcome back, Food Facts!</h1>
+    <p class="text-xl text-green-600 mb-8">Ready to explore the latest in nutritional insights?</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      <mat-card class="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <mat-card-header class="flex flex-row items-center justify-between space-y-0 pb-2">
+          <mat-card-title class="text-2xl font-bold">Quick Search</mat-card-title>
+          <mat-icon class="h-6 w-6 text-green-600">search</mat-icon>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-form-field class="w-full mt-2">
+            <input matInput placeholder="Search reports..." [(ngModel)]="searchTerm">
+          </mat-form-field>
+          <button mat-raised-button class="w-full mt-4 bg-green-600 hover:bg-green-700">
+            Search
+            <mat-icon class="ml-2 h-4 w-4">arrow_right</mat-icon>
+          </button>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <mat-card-header class="flex flex-row items-center justify-between space-y-0 pb-2">
+          <mat-card-title class="text-2xl font-bold">Your Activity</mat-card-title>
+          <mat-icon class="h-6 w-6 text-green-600">person</mat-icon>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="flex justify-between items-center">
+            <span>Reports Created</span>
+            <span class="text-2xl font-bold text-green-600">24</span>
+          </div>
+          <div class="flex justify-between items-center mt-2">
+            <span>Last Login</span>
+            <span class="text-green-600">2 days ago</span>
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <mat-card-header class="flex flex-row items-center justify-between space-y-0 pb-2">
+          <mat-card-title class="text-2xl font-bold">Upcoming</mat-card-title>
+          <mat-icon class="h-6 w-6 text-green-600">calendar_today</mat-icon>
+        </mat-card-header>
+        <mat-card-content>
+          <p class="font-semibold">Nutrition Conference</p>
+          <p class="text-sm text-gray-500">July 15-17, 2024</p>
+          <button mat-stroked-button class="w-full mt-4">
+            View Calendar
+          </button>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="mb-12">
+      <h2 class="text-3xl font-bold text-green-800 mb-6">Featured Reports</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <mat-card *ngFor="let report of featuredReports" class="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <mat-card-header>
+            <mat-card-title>{{ report.title }}</mat-card-title>
+            <mat-card-subtitle>{{ report.description }}</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <button mat-stroked-button class="w-full">Read Report</button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <mat-card class="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <mat-card-header class="flex flex-row items-center justify-between space-y-0 pb-2">
+          <mat-card-title class="text-2xl font-bold">Latest Trends</mat-card-title>
+          <mat-icon class="h-6 w-6 text-green-600">bar_chart</mat-icon>
+        </mat-card-header>
+        <mat-card-content>
+          <ul class="list-disc list-inside">
+            <li>Rise in plant-based protein consumption</li>
+            <li>Increased interest in gut health supplements</li>
+            <li>Growing demand for personalized nutrition plans</li>
+          </ul>
+          <button mat-raised-button class="w-full mt-4 bg-green-600 hover:bg-green-700">
+            Explore Trends
+          </button>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <mat-card-header class="flex flex-row items-center justify-between space-y-0 pb-2">
+          <mat-card-title class="text-2xl font-bold">Resource Center</mat-card-title>
+          <mat-icon class="h-6 w-6 text-green-600">book</mat-icon>
+        </mat-card-header>
+        <mat-card-content>
+          <p class="mb-4">Access our comprehensive library of nutritional research and guidelines.</p>
+          <button mat-stroked-button class="w-full">
+            Browse Resources
+          </button>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

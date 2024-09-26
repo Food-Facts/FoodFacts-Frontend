@@ -1,0 +1,38 @@
+/* Define the primary, accent, and warn colors */
+:root {
+  --primary-color: #3f51b5; /* Indigo */
+  --accent-color: #e91e63;  /* Pink */
+  --warn-color: #f44336;    /* Red */
+}
+
+/* Apply the custom theme to Angular Material components */
+.mat-primary {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.mat-accent {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+}
+
+.mat-warn {
+  background-color: var(--warn-color) !important;
+  color: white !important;
+}
+
+/* Example for buttons */
+.mat-raised-button.mat-primary {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.mat-raised-button.mat-accent {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+}
+
+.mat-raised-button.mat-warn {
+  background-color: var(--warn-color) !important;
+  color: white !important;
+}
