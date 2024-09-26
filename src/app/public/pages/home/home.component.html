@@ -52,12 +52,12 @@
       </mat-card>
     </div>
 
-    <div class="mb-12 ">
+    <div class="mb-12">
       <h2 class="text-3xl font-bold text-green-800 mb-6">Featured Reports</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 bg-green-200">
         <mat-card *ngFor="let report of featuredReports" class="shadow-lg hover:shadow-xl transition-shadow duration-300 bg-green-200">
           <mat-card-header class="bg-green-200">
-            <mat-card-title class="text-black bg-green-200">{{ report.title }}</mat-card-title>
+            <mat-card-title class="text-black">{{ report.title }}</mat-card-title>
             <mat-card-subtitle [ngClass]="{'text-white': report.description === 'Comprehensive analysis of top protein powders', 'text-black': report.description !== 'Comprehensive analysis of top protein powders'}">
               {{ report.description }}
             </mat-card-subtitle>
@@ -87,7 +87,7 @@
         </mat-card-content>
       </mat-card>
 
-      <mat-card class="bg-green-200 shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <mat-card class="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
         <mat-card-header class="flex flex-row items-center justify-between space-y-0 pb-2 bg-green-200">
           <mat-card-title class="text-2xl font-bold bg-green-200 text-black">Resource Center</mat-card-title>
           <mat-icon class="h-6 w-6 text-black">book</mat-icon>

@@ -1,10 +1,10 @@
 /* Define the primary, accent, and warn colors */
 :root {
-  --primary-color: #3f51b5; /* Indigo */
-  --accent-color: #e91e63;  /* Pink */
+  --primary-color: #4caf50; /* Light Green */
+  --accent-color: #8bc34a;  /* Light Green Accent */
   --warn-color: #f44336;    /* Red */
-  --card-background-color: #e8f5e9; /* Light Green */
-  --text-color: #2e7d32; /* Green */
+  --card-background-color: #e8f5e9; /* Light Green Background */
+  --text-color: #2e7d32; /* Dark Green */
   --background-color: #ffffff; /* White */
 }
 
@@ -51,10 +51,3 @@ body {
   background-color: var(--background-color) !important;
   color: var(--text-color) !important;
 }
-
-.mat-card-content {
-  background-color: greenyellow;
-  color: var(--text-color) !important;
-}
-
-
