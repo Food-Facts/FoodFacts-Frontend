@@ -150,5 +150,25 @@
       "fiber": 0,
       "image_url": "https://images.openfoodfacts.org/images/products/073/762/806/4502/front_en.6.400.jpg"
     }
+  ],
+
+  "nutritionists": [
+    {
+      "id": 1,
+      "name": "Dr. Ana Pérez",
+      "specialty": "Pérdida de peso",
+      "experience": 10,
+      "email": "ana.perez@example.com",
+      "phone": "123-456-7890"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Luis González",
+      "specialty": "Nutrición deportiva",
+      "experience": 7,
+      "email": "luis.gonzalez@example.com",
+      "phone": "987-654-3210"
+    }
   ]
 }
+
