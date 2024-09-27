@@ -17,7 +17,7 @@ export class NutritionalValueComponent implements OnInit {
 
   ngOnInit(): void {
     const productId = this.route.snapshot.paramMap.get('id');
-    this.http.get<any>(`http://localhost:3258/products/${productId}`).subscribe((data) => {
+    this.http.get<any>(`http://localhost:3000/products/${productId}`).subscribe((data) => {
       this.product = data;
     });
   }

@@ -13,11 +13,7 @@
       "sodium": 55,
       "sugar": 40,
       "fiber": 0,
-      "image_url": "https://images.openfoodfacts.org/images/products/073/762/806/4502/front_en.6.400.jpg",
-      "additional_info": [
-        "Caffeine Content: 41 mg per 12 oz",
-        "Not a significant source of Vitamin D, Calcium, Iron, or Potassium"
-      ]
+      "image_url": "https://images.openfoodfacts.org/images/products/750/119/834/3731/front_es.4.full.jpg"
     },
     {
       "id": 2,
@@ -32,12 +28,7 @@
       "sodium": 45,
       "sugar": 39,
       "fiber": 0,
-      "image_url": "https://images.openfoodfacts.org/images/products/073/762/806/4502/front_en.6.400.jpg",
-      "additional_info": [
-        "Caffeine Content: 34 mg per 12 oz",
-        "Contains high fructose corn syrup",
-        "Not a significant source of fiber, Vitamin D, Calcium, Iron, or Potassium"
-      ]
+      "image_url": "https://images.openfoodfacts.org/images/products/544/900/021/4799/front_es.224.full.jpg"
     },
     {
       "id": 3,
@@ -52,11 +43,7 @@
       "sodium": 30,
       "sugar": 41,
       "fiber": 0,
-      "image_url": "https://images.openfoodfacts.org/images/products/073/762/806/4502/front_en.6.400.jpg",
-      "additional_info": [
-        "Caffeine Content: 38 mg per 12 oz",
-        "Contains high fructose corn syrup"
-      ]
+      "image_url": "https://images.openfoodfacts.org/images/products/841/049/430/0050/front_es.27.full.jpg"
     },
     {
       "id": 4,
@@ -71,11 +58,7 @@
       "sodium": 65,
       "sugar": 38,
       "fiber": 0,
-      "image_url": "https://images.openfoodfacts.org/images/products/073/762/806/4502/front_en.6.400.jpg",
-      "additional_info": [
-        "Caffeine Free",
-        "Contains high fructose corn syrup"
-      ]
+      "image_url": "https://images.openfoodfacts.org/images/products/544/900/000/6561/front_es.11.full.jpg"
     },
     {
       "id": 5,
@@ -90,11 +73,7 @@
       "sodium": 50,
       "sugar": 44,
       "fiber": 0,
-      "image_url": "https://images.openfoodfacts.org/images/products/073/762/806/4502/front_en.6.400.jpg",
-      "additional_info": [
-        "Caffeine Free",
-        "Contains high fructose corn syrup"
-      ]
+      "image_url": "https://images.openfoodfacts.org/images/products/544/900/001/1527/front_es.263.full.jpg"
     },
     {
       "id": 6,
@@ -109,11 +88,7 @@
       "sodium": 60,
       "sugar": 46,
       "fiber": 0,
-      "image_url": "https://images.openfoodfacts.org/images/products/073/762/806/4502/front_en.6.400.jpg",
-      "additional_info": [
-        "Caffeine Content: 54 mg per 12 oz",
-        "Contains high fructose corn syrup"
-      ]
+      "image_url": "https://images.openfoodfacts.org/images/products/611/125/242/1254/front_en.25.full.jpg"
     },
     {
       "id": 7,
@@ -128,11 +103,7 @@
       "sodium": 50,
       "sugar": 38,
       "fiber": 0,
-      "image_url": "https://images.openfoodfacts.org/images/products/073/762/806/4502/front_en.6.400.jpg",
-      "additional_info": [
-        "Caffeine Free",
-        "Contains high fructose corn syrup"
-      ]
+      "image_url": "https://images.openfoodfacts.org/images/products/87177756/front_es.43.full.jpg"
     },
     {
       "id": 8,
@@ -147,11 +118,7 @@
       "sodium": 60,
       "sugar": 45,
       "fiber": 0,
-      "image_url": "https://images.openfoodfacts.org/images/products/073/762/806/4502/front_en.6.400.jpg",
-      "additional_info": [
-        "Caffeine Content: 22 mg per 12 oz",
-        "Contains high fructose corn syrup"
-      ]
+      "image_url": "https://images.openfoodfacts.org/images/products/073/762/806/4502/front_en.6.400.jpg"
     },
     {
       "id": 9,
@@ -166,11 +133,7 @@
       "sodium": 55,
       "sugar": 45,
       "fiber": 0,
-      "image_url": "https://images.openfoodfacts.org/images/products/073/762/806/4502/front_en.6.400.jpg",
-      "additional_info": [
-        "Caffeine Content: 42 mg per 12 oz",
-        "Contains high fructose corn syrup"
-      ]
+      "image_url": "https://images.openfoodfacts.org/images/products/073/762/806/4502/front_en.6.400.jpg"
     },
     {
       "id": 10,
@@ -185,11 +148,7 @@
       "sodium": 55,
       "sugar": 44,
       "fiber": 0,
-      "image_url": "https://images.openfoodfacts.org/images/products/073/762/806/4502/front_en.6.400.jpg",
-      "additional_info": [
-        "Caffeine Free",
-        "Contains high fructose corn syrup"
-      ]
+      "image_url": "https://images.openfoodfacts.org/images/products/073/762/806/4502/front_en.6.400.jpg"
     }
   ]
 }
