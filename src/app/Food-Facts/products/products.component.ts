@@ -18,7 +18,7 @@ export class ProductsComponent {
   }
 
   fetchProducts() {
-    this.http.get<any[]>('http://localhost:3000/products')
+    this.http.get<any[]>('https://fake-api-jade-eta.vercel.app/products')
       .subscribe(data => {
         this.products = data;
       });
