@@ -35,7 +35,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let product of products">
+    <tr *ngFor="let product of products" (click)="goToNutritionalValue(product.id)">
       <td class="product-info">
         <img [src]="product.image_url" alt="{{product.name}}" class="product-img" />
         <span>{{ product.name }}</span>

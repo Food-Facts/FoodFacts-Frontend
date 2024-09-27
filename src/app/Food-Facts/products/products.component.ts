@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -12,7 +13,7 @@ import { CommonModule } from '@angular/common';
 export class ProductsComponent {
   products: any[] = [];
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient,private router: Router) {
     this.fetchProducts();
   }
 
@@ -22,4 +23,9 @@ export class ProductsComponent {
         this.products = data;
       });
   }
+
+  goToNutritionalValue(productId: number) {
+    this.router.navigate(['/nutritional-value', productId]);
+  }
+
 }

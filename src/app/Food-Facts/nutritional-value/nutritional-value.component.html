@@ -1,0 +1,97 @@
+<div class="flex justify-center items-center min-h-screen bg-gradient-to-br from-red-50 to-red-100">
+  <div class="bg-white shadow-2xl rounded-lg overflow-hidden max-w-4xl w-full m-4 border border-red-100">
+    <div class="p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Primera Columna: Imagen y Información General -->
+      <div class="flex flex-col justify-between">
+        <div>
+          <div
+            class="relative h-48 w-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-red-500 shadow-lg"
+          >
+            <img [src]="product.image_url" alt="{{ product.name }}" class="object-cover h-full w-full" />
+          </div>
+          <h2 class="text-3xl font-bold text-red-800 mb-2 text-center">{{ product.name }}</h2>
+          <p class="text-red-600 mb-4 text-center font-semibold">{{ product.brand }} | {{ product.category }}</p>
+        </div>
+
+        <!-- Información Adicional -->
+        <div class="bg-red-50 p-4 rounded-lg border border-red-100 shadow-inner">
+          <h3 class="text-lg font-semibold text-red-800 mb-2">Información Adicional</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li *ngFor="let info of product.additional_info" class="text-sm text-red-700">{{ info }}</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Segunda Columna: Información Nutricional -->
+      <div class="bg-gradient-to-br from-red-50 to-white p-6 rounded-lg shadow-inner border border-red-100">
+        <h3 class="text-2xl font-bold text-red-800 mb-4">Información Nutricional</h3>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+          <!-- Items de Nutrición -->
+          <div class="flex items-center space-x-3 bg-white p-3 rounded-lg shadow">
+            <i class="w-6 h-6 text-red-500">🍽️</i>
+            <div>
+              <p class="text-sm font-medium text-gray-500">Tamaño de Porción</p>
+              <p class="text-lg font-bold text-red-700">{{ product.serving_size }}</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-3 bg-white p-3 rounded-lg shadow">
+            <i class="w-6 h-6 text-red-500">🔥</i>
+            <div>
+              <p class="text-sm font-medium text-gray-500">Calorías</p>
+              <p class="text-lg font-bold text-red-700">{{ product.calories }} kcal</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-3 bg-white p-3 rounded-lg shadow">
+            <i class="w-6 h-6 text-red-500">🥪</i>
+            <div>
+              <p class="text-sm font-medium text-gray-500">Carbohidratos</p>
+              <p class="text-lg font-bold text-red-700">{{ product.carbs }}g</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-3 bg-white p-3 rounded-lg shadow">
+            <i class="w-6 h-6 text-red-500">🍬</i>
+            <div>
+              <p class="text-sm font-medium text-gray-500">Azúcar</p>
+              <p class="text-lg font-bold text-red-700">{{ product.sugar }}g</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-3 bg-white p-3 rounded-lg shadow">
+            <i class="w-6 h-6 text-red-500">🧂</i>
+            <div>
+              <p class="text-sm font-medium text-gray-500">Sodio</p>
+              <p class="text-lg font-bold text-red-700">{{ product.sodium }}mg</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-3 bg-white p-3 rounded-lg shadow">
+            <i class="w-6 h-6 text-red-500">💧</i>
+            <div>
+              <p class="text-sm font-medium text-gray-500">Grasa</p>
+              <p class="text-lg font-bold text-red-700">{{ product.fat }}g</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botón de Riesgo de Salud -->
+        <button
+          class="w-full bg-red-600 text-white font-bold py-2 px-4 rounded flex items-center justify-center"
+          (click)="openHealthDialog()"
+        >
+          <i class="mr-2">⚠️</i> Riesgos para la Salud
+        </button>
+
+        <!-- Dialogo de Riesgos para la Salud -->
+        <div *ngIf="isHealthDialogOpen" class="mt-4 p-4 bg-red-100 border border-red-200 rounded-lg shadow-inner">
+          <h3 class="text-xl font-bold text-red-800 mb-2">Riesgos para la Salud Asociados con {{ product.name }}</h3>
+          <ul class="list-disc list-inside mt-4 space-y-2">
+            <li>Alto contenido de azúcar que puede contribuir a la obesidad y caries dentales</li>
+            <li>El consumo regular puede aumentar el riesgo de diabetes tipo 2</li>
+            <li>El contenido de cafeína puede causar trastornos del sueño en personas sensibles</li>
+            <li>El ácido fosfórico puede contribuir a la disminución de la densidad ósea con el tiempo</li>
+            <li>Alto contenido calórico que puede llevar a un aumento de peso si se consume en exceso</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
