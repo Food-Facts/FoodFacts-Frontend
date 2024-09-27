@@ -1,6 +1,7 @@
+// src/app/Food-Facts/nutritional-value/nutritional-value.component.ts
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -13,7 +14,7 @@ import { CommonModule } from '@angular/common';
 export class NutritionalValueComponent implements OnInit {
   product: any = {};
 
-  constructor(private http: HttpClient, private route: ActivatedRoute) {}
+  constructor(private http: HttpClient, private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit(): void {
     const productId = this.route.snapshot.paramMap.get('id');
@@ -22,9 +23,7 @@ export class NutritionalValueComponent implements OnInit {
     });
   }
 
-  isHealthDialogOpen: boolean = false;
-
-  openHealthDialog() {
-    this.isHealthDialogOpen = !this.isHealthDialogOpen;
+  navigateToHealthRisks() {
+    this.router.navigate(['/health-risks']);
   }
 }

@@ -18,7 +18,7 @@ export class HealthRisksComponent {
   }
 
   fetchHealthRisks() {
-    this.http.get<any[]>('http://localhost:3081/healthrisk')
+    this.http.get<any[]>('http://localhost:3000/healthrisk')
       .subscribe(data => {
         this.healthrisks = data;
       });

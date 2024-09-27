@@ -5,6 +5,7 @@ import {NgModule} from "@angular/core";
 import {NutritionalValueComponent} from "./Food-Facts/nutritional-value/nutritional-value.component";
 import {NutritionistComponent} from "./Food-Facts/nutritionist/nutritionist.component";
 import {ProfileComponent} from "./public/pages/profile/profile.component";
+import {HealthRisksComponent} from "./Food-Facts/health-risks/health-risks.component";
 
 export const routes: Routes = [
 
@@ -13,7 +14,8 @@ export const routes: Routes = [
   {path:'nutritional-value/:id', component: NutritionalValueComponent  },
   { path: '', redirectTo: '/products', pathMatch: 'full' },
   {path: 'nutritionist', component: NutritionistComponent},
-  {path: 'profile', component: ProfileComponent}
+  {path: 'profile', component: ProfileComponent},
+  {path: 'health-risks', component: HealthRisksComponent}
   // Add other routes here
 
 ];

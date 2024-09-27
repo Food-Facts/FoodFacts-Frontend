@@ -75,22 +75,13 @@
         <!-- Botón de Riesgo de Salud -->
         <button
           class="w-full bg-red-600 text-white font-bold py-2 px-4 rounded flex items-center justify-center"
-          (click)="openHealthDialog()"
+          (click)="navigateToHealthRisks()"
         >
-          <i class="mr-2">⚠️</i> Riesgos para la Salud
+          <i class="mr-2">⚠️</i> Health Risks
         </button>
 
         <!-- Dialogo de Riesgos para la Salud -->
-        <div *ngIf="isHealthDialogOpen" class="mt-4 p-4 bg-red-100 border border-red-200 rounded-lg shadow-inner">
-          <h3 class="text-xl font-bold text-red-800 mb-2">Riesgos para la Salud Asociados con {{ product.name }}</h3>
-          <ul class="list-disc list-inside mt-4 space-y-2">
-            <li>Alto contenido de azúcar que puede contribuir a la obesidad y caries dentales</li>
-            <li>El consumo regular puede aumentar el riesgo de diabetes tipo 2</li>
-            <li>El contenido de cafeína puede causar trastornos del sueño en personas sensibles</li>
-            <li>El ácido fosfórico puede contribuir a la disminución de la densidad ósea con el tiempo</li>
-            <li>Alto contenido calórico que puede llevar a un aumento de peso si se consume en exceso</li>
-          </ul>
-        </div>
+
       </div>
     </div>
   </div>
