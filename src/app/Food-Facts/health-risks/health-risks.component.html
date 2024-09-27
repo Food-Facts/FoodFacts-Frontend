@@ -1,0 +1,15 @@
+<div class="health-risks-cards">
+  <h1>Riesgos para la salud</h1>
+  <tr *ngFor="let healthrisk of healthrisks" class="risks-container">
+    <mat-card class="risk-card">
+      <mat-card-header>
+        <mat-card-title class="risk-title">{{healthrisk.title}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="risk-content">
+        <p>
+          {{healthrisk.description}}
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </tr>
+</div>
