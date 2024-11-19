@@ -7,6 +7,7 @@ import {NutritionistComponent} from "./Food-Facts/nutritionist/nutritionist.comp
 import {ProfileComponent} from "./public/pages/profile/profile.component";
 import {HealthRisksComponent} from "./Food-Facts/health-risks/health-risks.component";
 
+
 export const routes: Routes = [
 
   { path: 'home', component: HomeComponent },

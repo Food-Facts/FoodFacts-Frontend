@@ -15,7 +15,7 @@ export class NutritionistComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get<any[]>('https://fake-api-jade-eta.vercel.app/nutritionists').subscribe((data) => {
+    this.http.get<any[]>('http://localhost:8080/api/nutritionists').subscribe((data) => {
       this.nutritionists = data;
     });
   }

@@ -18,14 +18,14 @@ export class ProductsComponent {
   }
 
   fetchProducts() {
-    this.http.get<any[]>('https://fake-api-jade-eta.vercel.app/products')
+    this.http.get<any[]>('http://localhost:8080/api/products')
       .subscribe(data => {
         this.products = data;
       });
   }
 
   goToNutritionalValue(productId: number) {
-    this.router.navigate(['/nutritional-value', productId]);
+    this.router.navigate([`/nutritional-value/${productId}`]);
   }
 
 }

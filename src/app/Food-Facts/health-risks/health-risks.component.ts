@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {MatCard, MatCardContent, MatCardHeader, MatCardTitle} from "@angular/material/card";
+import { HttpClient } from "@angular/common/http";
+import { MatCard, MatCardContent, MatCardHeader, MatCardTitle } from "@angular/material/card";
 import { CommonModule } from "@angular/common";
 
 @Component({
@@ -14,13 +14,15 @@ export class HealthRisksComponent {
   healthrisks: any[] = [];
 
   constructor(private http: HttpClient) {
-    this.fetchHealthRisks();
+    // Proporciona un valor de healthRiskId al llamar al método
+    const healthRiskId = 1; // Cambia este valor según sea necesario
+    this.fetchHealthRisks(healthRiskId);
   }
 
-  fetchHealthRisks() {
-    this.http.get<any[]>('https://fake-api-jade-eta.vercel.app/healthrisk')
+  fetchHealthRisks(healthRiskId: number) {
+    this.http.get<any>(`http://localhost:8080/healthRisk/${healthRiskId}`)
       .subscribe(data => {
-        this.healthrisks = data;
+        this.healthrisks = [data];
       });
   }
 }
