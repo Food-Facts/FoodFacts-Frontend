@@ -4,6 +4,8 @@
   background-color: #CAECB6;
   padding: 15px;
   border-radius: 13px;
+  border-color: #166534;
+  border-width: 3px;
 }
 
 .risk-title{
@@ -31,6 +33,7 @@ h1{
   text-align: center;
 }
 
-.icono{
-  margin-left: 15px;
+.icon{
+  margin-left: 81px;
+  margin-right: 81px;
 }
