@@ -18,7 +18,7 @@ export class ProductsComponent {
   }
 
   fetchProducts() {
-    this.http.get<any[]>('http://localhost:8080/api/products')
+    this.http.get<any[]>('http://localhost:8080/products')
       .subscribe(data => {
         this.products = data;
       });
