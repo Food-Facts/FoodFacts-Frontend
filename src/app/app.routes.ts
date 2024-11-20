@@ -6,15 +6,19 @@ import { NutritionalValueComponent } from "./Food-Facts/nutritional-value/nutrit
 import { NutritionistComponent } from "./Food-Facts/nutritionist/nutritionist.component";
 import { ProfileComponent } from "./public/pages/profile/profile.component";
 import { HealthRisksComponent } from "./Food-Facts/health-risks/health-risks.component";
+import { LoginComponent } from './Food-Facts/login/login.component';
+import { RegisterComponent } from './Food-Facts/register/register.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'nutritional-value/:id', component: NutritionalValueComponent },
-  { path: '', redirectTo: '/products', pathMatch: 'full' },
   { path: 'nutritionist', component: NutritionistComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'healthRisk/:id', component: HealthRisksComponent } // Updated route definition
+  { path: 'healthRisk/:id', component: HealthRisksComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: '', redirectTo: '/login', pathMatch: 'full' } // Set login as the default route
 ];
 
 @NgModule({
