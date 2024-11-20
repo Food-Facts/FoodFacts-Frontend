@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { MatCard, MatCardContent, MatCardHeader, MatCardTitle } from "@angular/material/card";
 import { CommonModule } from "@angular/common";
+import {MatIcon} from "@angular/material/icon";
 
 @Component({
   selector: 'app-health-risks',
   standalone: true,
-  imports: [MatCard, MatCardHeader, MatCardContent, MatCardTitle, CommonModule],
+  imports: [MatCard, MatCardHeader, MatCardContent, MatCardTitle, CommonModule, MatIcon],
   templateUrl: './health-risks.component.html',
   styleUrl: './health-risks.component.css'
 })
