@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
 })
 export class NutritionalValueComponent implements OnInit {
   product: any = {};
-  healthrisks: any[] = []; // Add this line to define the healthrisks property
+  healthrisks: any[] = [];
 
   constructor(private http: HttpClient, private route: ActivatedRoute, private router: Router) {}
 
@@ -28,5 +28,12 @@ export class NutritionalValueComponent implements OnInit {
       .subscribe(data => {
         this.healthrisks = [data];
       });
+  }
+
+  navigateToHealthRisks() {
+    const healthRiskId = this.route.snapshot.paramMap.get('id');
+    if (healthRiskId) {
+      this.router.navigate([`/healthRisk/${healthRiskId}`]);
+    }
   }
 }
