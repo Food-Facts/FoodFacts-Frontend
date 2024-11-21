@@ -6,7 +6,6 @@ import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { NgClass, NgForOf, CommonModule } from '@angular/common';
-import { MatGridTile } from '@angular/material/grid-list';
 
 @Component({
   selector: 'app-home',
@@ -24,8 +23,7 @@ import { MatGridTile } from '@angular/material/grid-list';
     MatInputModule,
     MatButtonModule,
     NgForOf,
-    NgClass,
-    MatGridTile
+    NgClass
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']

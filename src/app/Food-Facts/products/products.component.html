@@ -3,18 +3,23 @@
 
   <!-- Barra de búsqueda -->
   <div class="search-bar">
-    <input type="text" placeholder="Search products" class="search-input" />
+    <input type="text" placeholder="Search products" class="search-input" [(ngModel)]="searchTerm" (input)="filterProducts()" />
   </div>
 
   <!-- Filtros -->
   <div class="filters">
-    <button>All</button>
-    <button>Processed</button>
-    <button>Industrially produced</button>
-    <button>Non-vegan</button>
-    <button>Non-gluten-free</button>
-    <button>Non-dairy-free</button>
-    <button>Non-egg-free</button>
+    <button (click)="sortProducts('name', 'asc')">Ord(A-Z)</button>
+    <button (click)="sortProducts('name', 'desc')">Ord(Z-A)</button>
+    <button (click)="sortProducts('calories', 'asc')">Ord(Calories Asc)</button>
+    <button (click)="sortProducts('calories', 'desc')">Ord(Calories Desc)</button>
+    <button (click)="sortProducts('carbohydrates', 'asc')">Ord(Carbs Asc)</button>
+    <button (click)="sortProducts('carbohydrates', 'desc')">Ord(Carbs Desc)</button>
+    <button (click)="sortProducts('fat', 'asc')">Ord(Fat Asc)</button>
+    <button (click)="sortProducts('fat', 'desc')">Ord(Fat Desc)</button>
+    <button (click)="sortProducts('protein', 'asc')">Ord(Protein Asc)</button>
+    <button (click)="sortProducts('protein', 'desc')">Ord(Protein Desc)</button>
+    <button (click)="sortProducts('sodium', 'asc')">Ord(Sodium Asc)</button>
+    <button (click)="sortProducts('sodium', 'desc')">Ord(Sodium Desc)</button>
   </div>
 
   <!-- Tabla de productos -->
@@ -36,7 +41,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let product of products" (click)="goToNutritionalValue(product.id)">
+    <tr *ngFor="let product of filteredProducts" (click)="goToNutritionalValue(product.id)">
       <td class="product-info">
         <img [src]="product.image_url" alt="{{product.name}}" class="product-img" />
         <span>{{ product.name }}</span>
@@ -54,5 +59,5 @@
       <td>{{ product.fiber }} g</td>
     </tr>
     </tbody>
-  </table>
+    </table>
 </div>
